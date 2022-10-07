@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./Person.module.css";
 
 function Person({name, height, mass, hair_color, skin_color, eye_color, birth_year, gender}){
-    console.log(name)
     return(
         <div className={styles.personWrap}>
             <div className={styles.personInfo}>

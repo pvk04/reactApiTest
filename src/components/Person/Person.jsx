@@ -1,16 +1,22 @@
 import React from "react";
 
+import styles from "./Person.module.css";
+
 function Person({name, height, mass, hair_color, skin_color, eye_color, birth_year, gender}){
+    console.log(name)
     return(
-        <div>
-            <h1>{name}</h1>
-            <p>{height}</p>
-            <p>{mass}</p>
-            <p>{hair_color}</p>
-            <p>{skin_color}</p>
-            <p>{eye_color}</p>
-            <p>{birth_year}</p>
-            <p>{gender}</p>
+        <div className={styles.personWrap}>
+            <div className={styles.personInfo}>
+                <h1 className={styles.personName}>{name}</h1>
+                <p>Height: {height}</p>
+                <p>Mass: {mass}</p>
+                <p>Hair color: {hair_color}</p>
+                <p>Skin color: {skin_color}</p>
+                <p>Eye color: {eye_color}</p>
+                <p>Birth year: {birth_year}</p>
+                <p>Gender: {gender}</p> 
+            </div>
+            
         </div>
     );
 }
